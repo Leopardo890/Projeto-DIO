@@ -1,6 +1,5 @@
-### Exemplo de Diagrama UML (Mermaid)
-```mermaid
-classDiagram
+```
+interfaceDiagram
     interface ReprodutorMusical {
         default tocar()
         default pausar()
