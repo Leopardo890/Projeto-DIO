@@ -1,18 +1,18 @@
-```
-interfaceDiagram
-    interface ReprodutorMusical {
+```mermaid
+classDiagram
+    class interface_ReprodutorMusical {
         default tocar()
         default pausar()
         default selecionarMusica(String musica)
     }
 
-    interface AparelhoTelefonico {
+    class interface_AparelhoTelefonico {
         default ligar(String numero)
         default atender()
         default iniciarCorreioVoz()
     }
 
-    interface NavegadorInternet {
+    class interface_NavegadorInternet {
         default exibirPagina(String url)
         default adicionarNovaAba()
         default atualizarPagina()
@@ -25,7 +25,7 @@ interfaceDiagram
         public ligar(String numero)
     }
 
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+    iPhone --> interface_ReprodutorMusical
+    iPhone --> interface_AparelhoTelefonico
+    iPhone --> interface_NavegadorInternet
 ```
